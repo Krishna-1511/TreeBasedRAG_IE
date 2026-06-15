@@ -100,3 +100,22 @@ Run `launchctl setenv OLLAMA_NUM_PARALLEL 2` and restart the Ollama app.
 2. **Build**: The system automatically builds a RAPTOR tree. This is saved to `my_tree/` and reloaded on future restarts.
 3. **Query**: Ask questions! The system will classify your query and retrieve context from the appropriate layers of the tree.
 4. **Visualize**: Check the "Tree Structure" and "Retrieved Nodes" panels to see exactly how the RAG engine picked its context.
+
+
+---
+
+## 🤝 Team & Collaboration
+
+This project was developed collaboratively as an academic initiative by **Anurag**, **Anrony**, and **Krishna**. Due to hardware constraints during the development phase, the primary testing and codebase pushes were executed from a single machine, which is reflected in the repository's commit history. 
+
+### 👨‍💻 Role Breakdown & Contributions:
+
+**Krishna (My Specific Focus):** 
+* **Data Preprocessing & Chunking:** Engineered the document parsing and dynamic text chunking logic to optimize the context window and ensure semantic completeness.
+* **Vector Embeddings:** Generated high-dimensional semantic embeddings using NLP models.
+* **Retrieval Pipeline:** Co-developed the retrieval logic, actively integrating the **FAISS** vector database for high-speed similarity search and context extraction.
+
+**Anurag & Antony's Focus:**
+* **RAPTOR Architecture & Clustering:** Led the implementation of the hierarchical tree construction and data clustering using **UMAP** dimensionality reduction and Gaussian Mixture Models.
+* **System Integration:** Managed the final integration with the LLM generation pipeline and automated hybrid querying routing.
+* **Infrastructure & UI:** Developed the React frontend, implemented the API routing, and configured the Docker containerization for seamless deployment.
